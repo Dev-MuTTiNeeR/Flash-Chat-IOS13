@@ -32,6 +32,18 @@ class ChatViewController: UIViewController {
 
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        view.window?.backgroundColor = UIColor(named: K.BrandColors.purple)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        view.window?.backgroundColor = .white
+    }
+    
     func loadMessages() {
         
         db.collection(K.FStore.collectionName)
