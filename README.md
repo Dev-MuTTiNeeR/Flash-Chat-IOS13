@@ -10,6 +10,7 @@ This project was developed to demonstrate proficiency in **MVC Architecture**, *
 <p align="center">
   <img src="https://github.com/user-attachments/assets/6b03240b-7692-4811-b7a4-a0c6fd6d9fbe" width="220" alt="Splash Screen">
   <img src="https://github.com/user-attachments/assets/03e88347-05b3-4106-bdb3-c3e0f9974ce6" width="220" alt="Login Screen">
+  <img src="https://github.com/user-attachments/assets/db9707e9-6556-4ea6-807d-5dbeeab70359" width="220" alt="Register Screen">
   <img src="https://github.com/user-attachments/assets/943eb44d-6a57-493e-9182-36cca4923c14" width="220" alt="Keyboard UI Polish">
 </p>
 
