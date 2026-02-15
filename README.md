@@ -1,55 +1,64 @@
-![App Brewery Banner](Documentation/AppBreweryBanner.png)
-
-# Flash-Chat
-
-## Our Goal
-
-One of the most fundamental component of modern iOS apps is the Table View. Table Views are used everywhere from the Mail app to the Messages app. It’s a crucial part of every iOS developer’s tool belt. In this tutorial we’ll be getting to grips with Table Views, creating custom cells, and making our own cloud-based backend database. It’s going to be epic, so buckle up.
-
-## What you will create
-
-Flash Chat is an internet based messaging app similar to WhatsApp, the popular messaging app that was bought by Facebook for $22 billion. We will be using a service called Firebase Firestore as a backend database to store and retrieve our messages from the cloud. 
-
-## What you will learn
-
-* How to integrate third party libraries in your app using Cocoapods and Swift Package Manager.
-* How to store data in the cloud using Firebase Firestore.
-* How to query and sort the Firebase database.
-* How to use Firebase for user authentication, registration and login.
-* How to work with UITableViews and how to set their data sources and delegates.
-* How to create custom views using .xib files to modify native design components.
-* How to embed View Controllers in a Navigation Controller and understand the navigation stack.
-* How to create a constants file and use static properties to store Strings and other constants.
-* Learn about Swift loops and create animations using loops.
-* Learn about the App Lifecycle and how to use viewWillAppear or viewWillDisappear.
-* How to create direct Segues for navigation.
+# ⚡️ Flash Chat iOS
 
 
-# Constants
-```
-struct K {
-    static let cellIdentifier = "ReusableCell"
-    static let cellNibName = "MessageCell"
-    static let registerSegue = "RegisterToChat"
-    static let loginSegue = "LoginToChat"
-    
-    struct BrandColors {
-        static let purple = "BrandPurple"
-        static let lightPurple = "BrandLightPurple"
-        static let blue = "BrandBlue"
-        static let lighBlue = "BrandLightBlue"
-    }
-    
-    struct FStore {
-        static let collectionName = "messages"
-        static let senderField = "sender"
-        static let bodyField = "body"
-        static let dateField = "date"
-    }
-}
+Flash Chat is a lightweight, internet-based real-time messaging application. It allows users to securely create accounts, log in, and exchange messages instantly.
 
-```
+This project was developed to demonstrate proficiency in **MVC Architecture**, **Firebase Integration**, and **CocoaPods** dependency management within the iOS development ecosystem.
 
->This is a companion project to The App Brewery's Complete App Developement Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+## 📱 App Screenshots
 
-![End Banner](Documentation/readme-end-banner.png)
+### 1. Authentication & Splash
+<p align="center">
+  <img src="LINK_IMG_2254" width="220" alt="Splash Screen">
+  <img src="LINK_IMG_2256" width="220" alt="Login Screen">
+  <img src="LINK_IMG_2258" width="220" alt="Keyboard UI Polish">
+</p>
+
+### 2. Real-Time Messaging (Sender vs Receiver)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7c7829b3-6d09-48ea-8fa0-8776fd251701" width="250" alt="Sender View">
+  <img src="LINK_user2" width="250" alt="Receiver View">
+</p>
+<p align="center">
+  <em>Above: Demonstration of real-time data sync. Left is 'Me', Right is the 'Receiver'. UI adapts dynamically based on the current user.</em>
+</p>
+
+## 🛠 Tech Stack & Libraries
+
+* **Language:** Swift 5
+* **Interface:** UIKit (Programmatic & Storyboard)
+* **Backend & Auth:** Firebase (Firestore & Auth)
+* **Dependency Manager:** CocoaPods
+* **3rd Party Libraries:**
+    * `IQKeyboardManagerSwift`: Handles keyboard interactions and screen sliding automatically.
+    * `CLTypingLabel`: Adds a typewriter animation effect to the title screen.
+    * `Firebase/Auth`: Manages secure user authentication.
+    * `Firebase/Firestore`: Powers the real-time database functionality.
+
+## ✨ Features
+
+* 💬 **Real-Time Messaging:** Instant data transmission using Cloud Firestore.
+* 🎨 **Custom UI:** Custom `MessageBubble` design and dynamic bubble coloring based on the sender (Me vs. You).
+
+## 🚀 Installation (How to Run)
+
+To run this project on your local machine, follow these steps:
+
+1.  Clone the repository:
+    ```bash
+    git clone [https://github.com/Dev-MuTTiNeeR/Flash-Chat-iOS13.git](https://github.com/Dev-MuTTiNeeR/Flash-Chat-iOS13.git)
+    ```
+2.  Navigate to the project directory and install Pods:
+    ```bash
+    cd Flash-Chat-iOS13
+    pod install
+    ```
+3.  Open the `.xcworkspace` file (not the .xcodeproj).
+4.  **Important Note:** For security reasons, the `GoogleService-Info.plist` file is not included in the repository. To run the app, you must create your own Firebase project, download your specific `GoogleService-Info.plist`, and place it inside the `Flash Chat iOS13` folder.
+
+## 👨‍💻 Developer
+
+**Cem** - [My GitHub Profile](https://github.com/Dev-MuTTiNeeR)
+
+---
+*This project was built and customized as part of Angela Yu's iOS Development Bootcamp.*
