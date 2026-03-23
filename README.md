@@ -60,7 +60,7 @@ To run this project on your local machine, follow these steps:
 
 ## 👨‍💻 Developer
 
-**Cem** - [My GitHub Profile](https://github.com/Dev-MuTTiNeeR)
+**Cem** - [My GitHub Profile](https://github.com/cemakkaya-dev)
 
 ---
 *This project was built and customized as part of Angela Yu's iOS Development Bootcamp.*
