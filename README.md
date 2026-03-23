@@ -48,7 +48,7 @@ To run this project on your local machine, follow these steps:
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/Dev-MuTTiNeeR/Flash-Chat-iOS13.git
+    git clone https://github.com/cemakkaya-dev/Flash-Chat-iOS13.git
     ```
 2.  Navigate to the project directory and install Pods:
     ```bash
